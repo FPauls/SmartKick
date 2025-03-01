@@ -1,4 +1,12 @@
 #include <Arduino.h>
+//#include <Nextion.h>
+
+// Nextion Display
+//#define nexSerial Serial2
+
+// Nextion Komponenten
+//NexText tScoreTeam1 = NexText(0, 1, "tScoreTeam1");
+//NexText tScoreTeam2 = NexText(0, 2, "tScoreTeam2");
 
 byte pinArrayInput[2]{
     2,                                              // Lichtschranke Tor 1 (Interrupt Pin 2)
@@ -55,10 +63,10 @@ class Buzzer {                                      // Klasse für den Piezo Sum
       pinMode(pin, OUTPUT);
     }
 
-    void activate(int duration) {                   // Methode zur Aktivierung des Piezo Summers
-      digitalWrite(pin, HIGH);
+    void activate(int duration, int frequency) {    // Methode zur Aktivierung des Piezo Summers mit Frequenz
+      tone(pin, frequency);                         // Startet das PWM-Signal mit der angegebenen Frequenz
       delay(duration);
-      digitalWrite(pin, LOW);
+      noTone(pin);                                  // Stoppt das PWM-Signal
     }
 };
 
@@ -96,23 +104,32 @@ void loop() {                                       // Loop-Funktion
   static unsigned long lastPrintTime = 0;
   unsigned long currentTime = millis();
 
+  // Zustände der Pins regelmäßig ausgeben
+  if (currentTime - lastPrintTime >= 1000) { // Alle 1000 ms (1 Sekunde)
+    lastPrintTime = currentTime;
+    Serial.print("Pin 2 state: ");
+    Serial.println(digitalRead(pinArrayInput[0]));
+    Serial.print("Pin 3 state: ");
+    Serial.println(digitalRead(pinArrayInput[1]));
+  }
+
   // Überprüfen, ob ein Tor erzielt wurde
   if (goal1Triggered) {
     goal1Triggered = false;
     scoreArray[0]++;
-    buzzer.activate(100);                           // Piezo Summer für 100ms aktivieren
+    buzzer.activate(100, 2000);                     // Piezo Summer für 100ms mit 2000Hz aktivieren
     Serial.print("Goal for Team 1! Score: ");
     Serial.println(scoreArray[0]);
-    // Code, um den Spielstand auf dem Nextion-Display zu aktualisieren
+    // updateNextionDisplay();                      // Spielstand auf dem Nextion-Display aktualisieren
   }
 
   if (goal2Triggered) {
     goal2Triggered = false;
     scoreArray[1]++;
-    buzzer.activate(100);                           // Piezo Summer für 100ms aktivieren
+    buzzer.activate(100, 1000);                     // Piezo Summer für 100ms mit 1000Hz aktivieren
     Serial.print("Goal for Team 2! Score: ");
     Serial.println(scoreArray[1]);
-    // Code, um den Spielstand auf dem Nextion-Display zu aktualisieren
+    // updateNextionDisplay();                      // Spielstand auf dem Nextion-Display aktualisieren
   }
 
   // Überprüfen, ob ein Team gewonnen hat
