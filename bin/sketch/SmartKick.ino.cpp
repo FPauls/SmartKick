@@ -1,3 +1,4 @@
+#line 1 "C:\\Users\\felix\\OneDrive - Hans-Böckler-Berufskolleg\\Unterlagen\\FSE2A\\FSE2A_Zwischenprojekt\\SmartKick\\SmartKick.ino"
 #include <Arduino.h>                                                                               // Standard-Arduino-Bibliothek
 
 byte pinArrayInput[2]{
@@ -85,6 +86,41 @@ class RGBLED {                                                                  
 
 RGBLED rgbLed(pinArrayOutput[0], pinArrayOutput[1], pinArrayOutput[2], pinArrayOutput[3]);      // Instanz der Klasse RGBLED
 
+#line 88 "C:\\Users\\felix\\OneDrive - Hans-Böckler-Berufskolleg\\Unterlagen\\FSE2A\\FSE2A_Zwischenprojekt\\SmartKick\\SmartKick.ino"
+bool debounce(volatile unsigned long &lastmillis);
+#line 96 "C:\\Users\\felix\\OneDrive - Hans-Böckler-Berufskolleg\\Unterlagen\\FSE2A\\FSE2A_Zwischenprojekt\\SmartKick\\SmartKick.ino"
+void ISR_Goal1();
+#line 104 "C:\\Users\\felix\\OneDrive - Hans-Böckler-Berufskolleg\\Unterlagen\\FSE2A\\FSE2A_Zwischenprojekt\\SmartKick\\SmartKick.ino"
+void ISR_Goal2();
+#line 114 "C:\\Users\\felix\\OneDrive - Hans-Böckler-Berufskolleg\\Unterlagen\\FSE2A\\FSE2A_Zwischenprojekt\\SmartKick\\SmartKick.ino"
+void printScore();
+#line 147 "C:\\Users\\felix\\OneDrive - Hans-Böckler-Berufskolleg\\Unterlagen\\FSE2A\\FSE2A_Zwischenprojekt\\SmartKick\\SmartKick.ino"
+void printConfig();
+#line 170 "C:\\Users\\felix\\OneDrive - Hans-Böckler-Berufskolleg\\Unterlagen\\FSE2A\\FSE2A_Zwischenprojekt\\SmartKick\\SmartKick.ino"
+void initializeGameTime();
+#line 177 "C:\\Users\\felix\\OneDrive - Hans-Böckler-Berufskolleg\\Unterlagen\\FSE2A\\FSE2A_Zwischenprojekt\\SmartKick\\SmartKick.ino"
+unsigned long getElapsedTime();
+#line 181 "C:\\Users\\felix\\OneDrive - Hans-Böckler-Berufskolleg\\Unterlagen\\FSE2A\\FSE2A_Zwischenprojekt\\SmartKick\\SmartKick.ino"
+unsigned long getRemainingTime();
+#line 186 "C:\\Users\\felix\\OneDrive - Hans-Böckler-Berufskolleg\\Unterlagen\\FSE2A\\FSE2A_Zwischenprojekt\\SmartKick\\SmartKick.ino"
+void checkGameEnd();
+#line 229 "C:\\Users\\felix\\OneDrive - Hans-Böckler-Berufskolleg\\Unterlagen\\FSE2A\\FSE2A_Zwischenprojekt\\SmartKick\\SmartKick.ino"
+void setGameMode(int mode);
+#line 247 "C:\\Users\\felix\\OneDrive - Hans-Böckler-Berufskolleg\\Unterlagen\\FSE2A\\FSE2A_Zwischenprojekt\\SmartKick\\SmartKick.ino"
+void resetGame();
+#line 258 "C:\\Users\\felix\\OneDrive - Hans-Böckler-Berufskolleg\\Unterlagen\\FSE2A\\FSE2A_Zwischenprojekt\\SmartKick\\SmartKick.ino"
+void startGame();
+#line 265 "C:\\Users\\felix\\OneDrive - Hans-Böckler-Berufskolleg\\Unterlagen\\FSE2A\\FSE2A_Zwischenprojekt\\SmartKick\\SmartKick.ino"
+void stopGame();
+#line 270 "C:\\Users\\felix\\OneDrive - Hans-Böckler-Berufskolleg\\Unterlagen\\FSE2A\\FSE2A_Zwischenprojekt\\SmartKick\\SmartKick.ino"
+void updateArray();
+#line 395 "C:\\Users\\felix\\OneDrive - Hans-Böckler-Berufskolleg\\Unterlagen\\FSE2A\\FSE2A_Zwischenprojekt\\SmartKick\\SmartKick.ino"
+void handleControlArray();
+#line 437 "C:\\Users\\felix\\OneDrive - Hans-Böckler-Berufskolleg\\Unterlagen\\FSE2A\\FSE2A_Zwischenprojekt\\SmartKick\\SmartKick.ino"
+void setup();
+#line 450 "C:\\Users\\felix\\OneDrive - Hans-Böckler-Berufskolleg\\Unterlagen\\FSE2A\\FSE2A_Zwischenprojekt\\SmartKick\\SmartKick.ino"
+void loop();
+#line 88 "C:\\Users\\felix\\OneDrive - Hans-Böckler-Berufskolleg\\Unterlagen\\FSE2A\\FSE2A_Zwischenprojekt\\SmartKick\\SmartKick.ino"
 bool debounce(volatile unsigned long &lastmillis) {                                             // Verwende interruptData[2] für die Entprellzeit
   if (millis() - lastmillis > interruptData[2]) {
     lastmillis = millis();

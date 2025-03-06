@@ -1,3 +1,5 @@
+#line 1 "C:\\Users\\felix\\OneDrive - Hans-Böckler-Berufskolleg\\Unterlagen\\FSE2A\\FSE2A_Zwischenprojekt\\SmartKick\\bin\\sketch\\SmartKick.ino.cpp"
+#line 1 "C:\\Users\\felix\\OneDrive - Hans-Böckler-Berufskolleg\\Unterlagen\\FSE2A\\FSE2A_Zwischenprojekt\\SmartKick\\SmartKick.ino"
 #include <Arduino.h>                                                                               // Standard-Arduino-Bibliothek
 
 byte pinArrayInput[2]{
