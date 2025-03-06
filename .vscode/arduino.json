@@ -1,7 +1,0 @@
-{
-    "sketch": "SmartKick.ino",
-    "output": ".\\bin",
-    "board": "arduino:avr:uno",
-    "programmer": "avrisp",
-    "port": "COM3"
-}
