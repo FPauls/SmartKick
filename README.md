@@ -6,22 +6,17 @@ Intelligente Torerfassung für Tischkicker
 ### controlArray
 Das `controlArray` wird verwendet, um Befehle wie Start, Stopp, Reset sowie die Möglichkeit, den Spielstand manuell zu erhöhen oder zu senken, zu steuern.
 
-- `[0]`: Start  1: Start,
-                0: Stop
-- `[1]`: Reset  1: Reset
-- `[2]`: Team 1 Spielstand ändern    1: +1,
-                                    -1: -1
-- `[3]`: Team 2 Spielstand ändern    1: +1,
-                                    -1: -1
+- `[0]`: Start:    `1`= Start, `0`= Stop
+- `[1]`: Reset:    `1`= Reset
+- `[2]`: Team 1 Spielstand ändern:  `1`= +1 Tore,  `-1`= -1 Tore
+- `[3]`: Team 2 Spielstand ändern:  `1`= +1 Tore,  `-1`= -1 Tore
 
 ### gameConfigArray
 Das `gameConfigArray` wird verwendet, um die Spielkonfiguration zu speichern, wie z.B. die Spielzeit, die Anzahl der Tore zum Sieg und den Spielmodus.
 
-- `[0]`: Spielzeit in Minuten
+- `[0]`: Spielzeit in Minuten 
 - `[1]`: Tore zum Sieg
-- `[2]`: Spielmodus 0: FreePlay, 
-                    1: Zeitspiel, 
-                    2: Klassisches Spiel
+- `[2]`: Spielmodus `0`= FreePlay,  `1`= Zeitspiel,  `2`= Klassisches Spiel  
 
 ## Konsolenschnittstelle
 
@@ -46,7 +41,7 @@ Das `gameConfigArray` wird verwendet, um die Spielkonfiguration zu speichern, wi
 | `set reset`        | Setzt das Spiel zurück                            |
 | `set score1 0`     | Setzt den Spielstand für Team 1 auf 0             |
 | `set score2 3`     | Setzt den Spielstand für Team 2 auf 3             |
-
+|                    |                                                   |
 | `get score`        | Gibt den aktuellen Spielstand aus                 |
 | `get config`       | Gibt die aktuelle Spielkonfiguration aus          |
 
