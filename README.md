@@ -17,6 +17,8 @@ Im Vergleich zu klassischen Anzeigen bietet das Touch-Display:
 
 Durch moderne Sensortechnik und interaktive Visualisierung schaffen wir eine innovative Lösung für Tischkicker-Enthusiasten.
 
+Dieses Projekt wurde mit Unterstützung und im Auftrag des [Hans-Böckler-Berufskollegs](https://www.hbbk-muenster.de/bildungsgaenge/fst/projekte/) erarbeitet.
+
 Bitte beachte, dass wir das Projekt eventuell nach Abschluss der Technikerschule wieder offline nehmen können und keine Garantien stellen können.
 
 ## Konsolenschnittstelle
