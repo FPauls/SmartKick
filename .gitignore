@@ -1,3 +1,5 @@
 # Ignoriere den bin-Ordner
 bin/
-./vscode
+
+# Ignoriere den .vscode-Ordner
+.vscode/

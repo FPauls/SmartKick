@@ -114,27 +114,16 @@ char previousBuffer[64] = "";                                                   
 void printScore() {                                                                             // Funktion zur Ausgabe des Spielstands
   char buffer[64];                                                                              // Erhöht die Puffergröße, um sicherzustellen, dass genügend Platz für die Ausgabe vorhanden ist
   unsigned long minutes, seconds;
+  unsigned long elapsedTime;
 
-  switch (gameConfigArray[2]) {
-    case 1: { // TIME_PLAY
-      unsigned long remainingTime = getRemainingTime();
-      minutes = remainingTime / 60;
-      seconds = remainingTime % 60;
-      break;
-    }
-    case 2: { // CLASSIC_PLAY
-      unsigned long elapsedTime = getElapsedTime();
-      minutes = elapsedTime / 60;
-      seconds = elapsedTime % 60;
-      break;
-    }
-    default: { // FREE_PLAY
-      unsigned long elapsedTime = getElapsedTime();
-      minutes = elapsedTime / 60;
-      seconds = elapsedTime % 60;
-      break;
-    }
+  if (scoreArray[3] == 1) {                                                                     // Wenn das Spiel beendet ist
+    elapsedTime = scoreArray[5];                                                                // Verwende die gespeicherte Spielzeit
+  } else {
+    elapsedTime = getElapsedTime();                                                             // Berechne die verstrichene Zeit
   }
+
+  minutes = elapsedTime / 60;
+  seconds = elapsedTime % 60;
 
   snprintf(buffer, sizeof(buffer), "\n\n            %02lu:%02lu\nTeam Blau   %02lu:%02lu   Team Gelb\n", minutes, seconds, scoreArray[0], scoreArray[1]);
 
@@ -206,6 +195,7 @@ void checkGameEnd() {
 
   if (scoreArray[3] == 1) {
     stopGame();                                                                                 // Spiel stoppen 
+    scoreArray[5] = getElapsedTime();                                                           // Spielzeit speichern
     switch (scoreArray[0] > scoreArray[1] ? 1 : (scoreArray[1] > scoreArray[0] ? 2 : 0)) {      
       case 1:
         Serial.println("Team Blau gewinnt!");
