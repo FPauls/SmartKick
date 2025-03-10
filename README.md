@@ -26,7 +26,7 @@ Bitte beachte, dass wir das Projekt eventuell nach Abschluss der Technikerschule
 ### Format
 
 `<key> <command> <value>`
-- `<key>`       : Das Keyword, unterscheidet zwischen `set` und `get`.
+- `<key>`       : Das Keyword, unterscheidet zwischen `set`, `get` und `nxt`.
 - `<command>`   : Der Befehl, der ausgeführt werden soll.
 - `<value>`     : Der Wert, der dem Befehl zugewiesen werden soll.
 
@@ -44,6 +44,8 @@ Bitte beachte, dass wir das Projekt eventuell nach Abschluss der Technikerschule
 | `set reset`        | Setzt das Spiel zurück                            |
 | `set score1 0`     | Setzt den Spielstand für Team 1 auf 0             |
 | `set score2 3`     | Setzt den Spielstand für Team 2 auf 3             |
+| `nxt score2 +`     | Erhöht den Spielstand für das aktuelle Team       |
+| `nxt score1 -`     | Verringert den Spielstand für das aktuelle Team   |
 |                    |                                                   |
 | `get score`        | Gibt den aktuellen Spielstand aus                 |
 | `get config`       | Gibt die aktuelle Spielkonfiguration aus          |
@@ -73,28 +75,17 @@ Bitte beachte, dass wir das Projekt eventuell nach Abschluss der Technikerschule
 
 - **Spielstand für Team 1 auf 3 setzen:** Sende `set score1 3`, um den Spielstand für Team 1 auf 3 setzen.
 - **Spielstand für Team 2 auf 0 setzen:** Sende `set score2 0`, um den Spielstand für Team 2 auf 0 setzen.
+- **Spielstand für Team 1 um 1 zu erhöhen:** Sende `set score1 +`, um den Spielstand für Team 1 um 1 zu erhöhen.
+- **Spielstand für Team 2 um 1 zu senken:** Sende `set score2 -`, um den Spielstand für Team 2 um 1 zu senken.
 
 ### Daten abrufen
 
 - **Spielstand abrufen:** Sende `get score`, um den aktuellen Spielstand abzurufen.
 - **Konfiguration abrufen:** Sende `get config`, um die aktuelle Konfiguration abzurufen.
 
-## Arrays
+### Befehle an Nextion senden
 
-### controlArray
-Das `controlArray` wird verwendet, um Befehle wie Start, Stopp, Reset sowie die Möglichkeit, den Spielstand manuell zu erhöhen oder zu senken, zu steuern.
-
-- `[0]`: Start:    `1`= Start, `0`= Stop
-- `[1]`: Reset:    `1`= Reset
-- `[2]`: Team 1 Spielstand ändern:  `1`= +1 Tore,  `-1`= -1 Tore
-- `[3]`: Team 2 Spielstand ändern:  `1`= +1 Tore,  `-1`= -1 Tore
-
-### gameConfigArray
-Das `gameConfigArray` wird verwendet, um die Spielkonfiguration zu speichern, wie z.B. die Spielzeit, die Anzahl der Tore zum Sieg und den Spielmodus.
-
-- `[0]`: Spielzeit in Minuten 
-- `[1]`: Tore zum Sieg
-- `[2]`: Spielmodus `0`= FreePlay,  `1`= Zeitspiel,  `2`= Klassisches Spiel  
+- **Nextion Befehl senden:** Sende `nxt <command>`, um einen befehl an das Nextion Display zu senden.
 
 ## Lizenz
 
