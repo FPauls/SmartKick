@@ -1,94 +1,124 @@
 # SmartKick
-Intelligente Torerfassung für Tischkicker
+> Intelligente Torerfassung für Tischkicker
 
-## Projektbeschreibung
+<img alt="Version" src="https://img.shields.io/badge/version-1.0-blue">
+<img alt="License" src="https://img.shields.io/badge/license-MIT-green">
+<img alt="Arduino" src="https://img.shields.io/badge/Arduino-Compatible-teal">
 
+## 📋 Inhalt
+
+- [📝 Projektbeschreibung](#-projektbeschreibung)
+- [✨ Features](#-features)
+- [🧰 Komponenten](#-komponenten)
+- [🖥️ Konsolenschnittstelle](#️-konsolenschnittstelle)
+  - [Allgemeine Hilfe](#allgemeine-hilfe)
+  - [GET-Befehle](#get-befehle)
+  - [SET-Befehle](#set-befehle)
+  - [NXT-Befehle](#nxt-befehle)
+  - [Beispiele](#beispiele)
+- [🏫 Projektinformationen](#-projektinformationen)
+- [📄 Lizenz](#-lizenz)
+
+## 📝 Projektbeschreibung
 Hey! Wir sind angehende Elektrotechniker und das hier ist unser Schulprojekt. Wir haben uns vorgenommen, einen vorhandenen Tischkicker mit einer digitalen Auswertung zu erweitern. Die Veröffentlichung dieses Projekts ist nur ein Bonus. Wenn jemand anderes es nützlich findet, ist das ein Gewinn für uns alle!
 
 Wir entwickeln eine digitale Toranzeige als Nachrüstsatz für bestehende Tischkicker. Das System soll erzielte Tore automatisch erfassen, verschiedene Spielmodi unterstützen und das Spielerlebnis durch eine moderne Benutzeroberfläche verbessern.
 
 Hierfür integrieren wir ein Touch-Display in ein 3D-gedrucktes Gehäuse. Die Tore werden durch Sensoren erfasst und die Steuerung erfolgt über einen Mikrocontroller.
 
+## ✨ Features
 Im Vergleich zu klassischen Anzeigen bietet das Touch-Display:
 
-- **Dynamische Anzeige:** Spielmodi, Animationen und visuelle Effekte
-- **Touch-Bedienung:** Direkte Steuerung über das Display
-- **Erweiterte Funktionen:** Darstellung von Teamnamen, Spielständen und Timern
-
+Dynamische Anzeige: Spielmodi, Animationen und visuelle Effekte
+Touch-Bedienung: Direkte Steuerung über das Display
+Erweiterte Funktionen: Darstellung von Teamnamen, Spielständen und Timern
 Durch moderne Sensortechnik und interaktive Visualisierung schaffen wir eine innovative Lösung für Tischkicker-Enthusiasten.
 
-Dieses Projekt wurde mit Unterstützung und im Auftrag des [Hans-Böckler-Berufskollegs](https://www.hbbk-muenster.de/bildungsgaenge/fst/projekte/) erarbeitet.
+## 🧰 Komponenten
+- Arduino Mikrocontroller
+- Nextion Touch-Display
+- Lichtschranken zur Torerkennung
+- RGB-LED für Visualisierung
+- 3D-gedrucktes Gehäuse
 
-Bitte beachte, dass wir das Projekt eventuell nach Abschluss der Technikerschule wieder offline nehmen können und keine Garantien stellen können.
+## 🖥️ Konsolenschnittstelle
+#### Allgemeine Hilfe
+```
+=== SMARTKICK HILFE ===
+help          - Diese Hilfe
+help get      - GET-Befehle anzeigen
+help set      - SET-Befehle anzeigen
+help nxt      - NXT-Befehle anzeigen
+```
 
-## Konsolenschnittstelle
+#### GET-Befehle
+```
+=== GET-BEFEHLE ===
+get score     - Zeigt Spielstand an
+get config    - Zeigt Konfiguration an
+```
 
-### Format
+#### SET-Befehle
+```
+=== SET-BEFEHLE ===
+set mode free|time|classic - Spielmodus setzen
+set time INT               - Spielzeit in Minuten
+set goals INT              - Tore zum Sieg
+set start|stop|reset       - Spielsteuerung
+set score1|score2 INT|+|-  - Spielstand setzen/ändern
+set name1|name2 STRING     - Teamnamen setzen
+set debug 0|1|2            - Debug-Level einstellen
+set nextion on|off         - Nextion-Display aktivieren/deaktivieren
+```
 
-`<key> <command> <value>`
-- `<key>`       : Das Keyword, unterscheidet zwischen `set`, `get` und `nxt`.
-- `<command>`   : Der Befehl, der ausgeführt werden soll.
-- `<value>`     : Der Wert, der dem Befehl zugewiesen werden soll.
+#### NXT-Befehle
+
+```
+=== NXT-BEFEHLE ===
+nxt COMMAND   - Sendet Befehl an Nextion-Display
+```
 
 ### Beispiele
-
-| Befehl             | Beschreibung                                      |
-|--------------------|---------------------------------------------------|
-| `set mode free`    | Setzt den Spielmodus auf FreePlay                 |
-| `set mode time`    | Setzt den Spielmodus auf Zeitspiel                |
-| `set mode classic` | Setzt den Spielmodus auf Klassisches Spiel        |
-| `set time 10`      | Setzt die Spielzeit auf 10 Minuten                |
-| `set goals 5`      | Setzt die Tore zum Sieg auf 5                     |
-| `set start`        | Startet das Spiel                                 |
-| `set stop`         | Stoppt das Spiel                                  |
-| `set reset`        | Setzt das Spiel zurück                            |
-| `set score1 0`     | Setzt den Spielstand für Team 1 auf 0             |
-| `set score2 3`     | Setzt den Spielstand für Team 2 auf 3             |
-| `nxt score2 +`     | Erhöht den Spielstand für das aktuelle Team       |
-| `nxt score1 -`     | Verringert den Spielstand für das aktuelle Team   |
-|                    |                                                   |
-| `get score`        | Gibt den aktuellen Spielstand aus                 |
-| `get config`       | Gibt die aktuelle Spielkonfiguration aus          |
-
-### Hinweise
-- Die Eingaben müssen über die serielle Konsole gesendet werden.
-- Die Werte werden sofort aktualisiert und die Änderungen werden in der Konsole bestätigt.
-
-### Spiel starten, stoppen und zurücksetzen
-
-- **Spiel starten:** Sende `set start`, um das Spiel zu starten.
-- **Spiel stoppen:** Sende `set stop`, um das Spiel zu stoppen.
-- **Spiel zurücksetzen:** Sende `set reset`, um das Spiel zurückzusetzen.
-
-### Zeiten einstellen
-
-- **Spielzeit auf 10 Minuten setzen:** Sende `set time 10`, um die Spielzeit auf 10 Minuten zu setzen.
-- **Spielzeit auf 5 Minuten setzen:** Sende `set time 5`, um die Spielzeit auf 5 Minuten zu setzen.
-
-### Modi umschalten
-
-- **Spielmodus auf FreePlay setzen:** Sende `set mode free`, um den Spielmodus auf FreePlay zu setzen.
-- **Spielmodus auf Zeitspiel setzen:** Sende `set mode time`, um den Spielmodus auf Zeitspiel zu setzen.
-- **Spielmodus auf Klassisches Spiel setzen:** Sende `set mode classic`, um den Spielmodus auf Klassisches Spiel zu setzen.
-
-### Spielstand korrigieren
-
-- **Spielstand für Team 1 auf 3 setzen:** Sende `set score1 3`, um den Spielstand für Team 1 auf 3 setzen.
-- **Spielstand für Team 2 auf 0 setzen:** Sende `set score2 0`, um den Spielstand für Team 2 auf 0 setzen.
-- **Spielstand für Team 1 um 1 zu erhöhen:** Sende `set score1 +`, um den Spielstand für Team 1 um 1 zu erhöhen.
-- **Spielstand für Team 2 um 1 zu senken:** Sende `set score2 -`, um den Spielstand für Team 2 um 1 zu senken.
-
-### Daten abrufen
-
-- **Spielstand abrufen:** Sende `get score`, um den aktuellen Spielstand abzurufen.
-- **Konfiguration abrufen:** Sende `get config`, um die aktuelle Konfiguration abzurufen.
-
-### Befehle an Nextion senden
-
-- **Nextion Befehl senden:** Sende `nxt <command>`, um einen befehl an das Nextion Display zu senden.
-
-## Lizenz
-
-Dieses Projekt ist unter der MIT-Lizenz lizenziert. Siehe die [LICENSE](LICENSE)-Datei für weitere Details.
+#### Spielmodi einstellen
+```
+set mode free     # Freies Spiel ohne Zeitlimit/Siegbedingung
+set mode time     # Zeitspiel mit festgelegter Spielzeit
+set mode classic  # Klassisches Spiel mit definierter Torzahl zum Sieg
+```
+#### Spielkonfiguration
+```
+set time 10       # Spielzeit auf 10 Minuten setzen
+set goals 5       # 5 Tore zum Sieg erforderlich
+set name1 Blau    # Team 1 auf "Blau" umbenennen
+set name2 Gelb    # Team 2 auf "Gelb" umbenennen
+```
+#### Spielsteuerung
+```
+set start         # Spiel starten (setzt Spielstand zurück)
+set stop          # Spiel anhalten
+set reset         # Spielstand zurücksetzen
+```
+#### Spielstand-Verwaltung
+```
+set score1 3      # Spielstand Team 1 auf 3 setzen
+set score2 0      # Spielstand Team 2 auf 0 setzen
+set score1 +      # Spielstand Team 1 erhöhen
+set score2 -      # Spielstand Team 2 verringern
+```
+#### System-Einstellungen
+```
+set debug 0       # Keine Debug-Ausgaben
+set debug 1       # Wichtige Debug-Meldungen
+set debug 2       # Ausführliche Debug-Meldungen
+set nextion on    # Nextion-Display aktivieren
+set nextion off   # Nextion-Display deaktivieren
+```
+## 🏫 Projektinformationen
+Dieses Projekt wurde mit Unterstützung und im Auftrag des Hans-Böckler-Berufskollegs erarbeitet.
 
 Bitte beachte, dass wir das Projekt eventuell nach Abschluss der Technikerschule wieder offline nehmen können und keine Garantien stellen können.
+
+## 📄 Lizenz
+Dieses Projekt ist unter der MIT-Lizenz lizenziert. Siehe die LICENSE-Datei für weitere Details.
+
+<p align="center"> <sub>Made with ❤️ by FSE2A-Team SmartKick | © 2025</sub> </p>
