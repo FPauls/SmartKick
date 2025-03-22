@@ -9,6 +9,7 @@ build/                  # Build-Ordner für kompilierte Dateien
 *.code-workspace        # VS Code Workspace-Dateien
 
 # Betriebssystem-spezifische Dateien
+.DS_Store
 Thumbs.db               # Windows Explorer-Miniaturansichten
 desktop.ini             # Windows Explorer-Konfigurationsdateien
 

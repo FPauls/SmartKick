@@ -1,0 +1,6 @@
+[wokwi]
+version=1
+firmware='/../build/SmartKick.ino.hex'
+elf='/../build/SmartKick.ino.elf'
+rfc2217ServerPort = 4000
+gdbServerPort=3333
