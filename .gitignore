@@ -1,5 +1,21 @@
-# Ignoriere den bin-Ordner
-bin/
+# Arduino spezifische Dateien
+build/                  # Build-Ordner für kompilierte Dateien
+*.hex                   # Kompilierte Hex-Dateien
+*.elf                   # ELF-Dateien
+*.bin                   # Binärdateien
 
-# Ignoriere den .vscode-Ordner
-.vscode/
+# IDE-spezifische Dateien
+.vscode/                # Visual Studio Code Konfigurationsordner
+*.code-workspace        # VS Code Workspace-Dateien
+
+# Betriebssystem-spezifische Dateien
+Thumbs.db               # Windows Explorer-Miniaturansichten
+desktop.ini             # Windows Explorer-Konfigurationsdateien
+
+# Temporäre Dateien
+*.tmp                   # Temporäre Dateien
+*.log                   # Log-Dateien
+*.bak                   # Backup-Dateien
+
+# Git-spezifische Dateien
+.git/                   # Git-Repository-Ordner (wird automatisch ignoriert)
