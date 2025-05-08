@@ -1,0 +1,8 @@
+#line 1 "C:\\Projects\\Arduino\\SmartKick\\.vscode\\arduino.json"
+{
+    "board": "arduino:avr:uno",
+    "port": "COM3",
+    "sketch": "SmartKick.ino",
+    "programmer": "avrisp",
+    "output": "./build"
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard"
+  },
+  {
+    "Sourcefile": "C:\\Projects\\Arduino\\SmartKick\\build\\sketch\\SmartKick.ino.cpp",
+    "Include": "AltSoftSerial.h",
+    "Includepath": "C:\\Arduino\\libraries\\AltSoftSerial"
+  },
+  {
+    "Sourcefile": "C:\\Projects\\Arduino\\SmartKick\\build\\sketch\\SmartKick.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Arduino\\libraries\\AltSoftSerial\\AltSoftSerial.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]

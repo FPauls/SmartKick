@@ -1,3 +1,4 @@
+#line 1 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 #include <Arduino.h>       // Arduino-Basisbibliothek
 #include <AltSoftSerial.h> // Serielle Kommunikation für Nextion
 
@@ -146,6 +147,65 @@ public:
 RGBLED rgbLed(pinArrayOutput[0], pinArrayOutput[1], pinArrayOutput[2], pinArrayOutput[3]); // RGB-LED-Objekt erstellen
 AltSoftSerial nextionSerial;                                                               // Nextion-Serielle-Verbindung
 
+#line 149 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+bool debounce(volatile unsigned long &lastmillis);
+#line 159 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void ISR_Goal1();
+#line 169 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void ISR_Goal2();
+#line 179 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void printScore();
+#line 243 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void printConfig();
+#line 280 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void initializeGameTime();
+#line 289 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+unsigned long getElapsedTime();
+#line 294 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+unsigned long getRemainingTime();
+#line 300 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+unsigned long calculateElapsedTime();
+#line 323 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void checkGameEnd();
+#line 390 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void resetGame();
+#line 402 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void startGame();
+#line 455 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void stopGame();
+#line 468 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void processCommand(String input);
+#line 528 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void handleGetCommand(String params);
+#line 561 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void handleSetCommand(String params);
+#line 638 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void handleNxtCommand(String params);
+#line 652 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void handleHelpCommand(String params);
+#line 685 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void handleSetMode(String value);
+#line 700 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void handleSetTime(String value);
+#line 711 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void handleSetGoals(String value);
+#line 719 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void handleSetScore(int teamIndex, String value);
+#line 760 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void handleSetName(int teamIndex, String value);
+#line 769 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void handleSetFlag(int flagIndex, String value);
+#line 819 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void sendCommandToNextion(const String &command);
+#line 834 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+String readNextionResponse();
+#line 890 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void updateNextion();
+#line 981 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void setup();
+#line 1001 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+void loop();
+#line 149 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 bool debounce(volatile unsigned long &lastmillis)
 { // Entprellfunktion für Interrupts
   if (millis() - lastmillis > interruptData[2])
