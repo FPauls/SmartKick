@@ -1,12 +1,15 @@
 #line 1 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#pragma region             // Includes
 #include <Arduino.h>       // Arduino-Basisbibliothek
 #include <AltSoftSerial.h> // Serielle Kommunikation für Nextion
+#pragma endregion
 
-// Debug- und Nextion-Einstellungen
+#pragma region              // Debug- und Nextion-Einstellungen
 byte debugLevel = 1;        // 0=keine, 1=wichtig, 2=ausführlich
 bool nextionEnabled = true; // true=aktiviert, false=deaktiviert
+#pragma endregion
 
-// Debug-Makros für verschiedene Ausgabelevels
+#pragma region                           // Debug-Makros für verschiedene Ausgabelevels
 #define DEBUG_0_PRINT(x) Serial.print(x) // Ausgabe immer (Level 0)
 #define DEBUG_0_PRINTLN(x) Serial.println(x)
 #define DEBUG_0_PRINT_F(x) Serial.print(F(x)) // Mit Flash-Speicher-Optimierung
@@ -37,6 +40,7 @@ bool nextionEnabled = true; // true=aktiviert, false=deaktiviert
 #define DEBUG_2_PRINTLN_F(x) \
   if (debugLevel >= 2)       \
   Serial.println(F(x))
+#pragma endregion
 
 byte pinArrayInput[2]{
     // Array für Eingangs-Pins
@@ -144,68 +148,70 @@ public:
   }
 };
 
+#pragma region                                                                             // Call Objects
 RGBLED rgbLed(pinArrayOutput[0], pinArrayOutput[1], pinArrayOutput[2], pinArrayOutput[3]); // RGB-LED-Objekt erstellen
 AltSoftSerial nextionSerial;                                                               // Nextion-Serielle-Verbindung
+#pragma endregion
 
-#line 149 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 155 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 bool debounce(volatile unsigned long &lastmillis);
-#line 159 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 165 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void ISR_Goal1();
-#line 169 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 175 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void ISR_Goal2();
-#line 179 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 185 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void printScore();
-#line 243 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 249 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void printConfig();
-#line 280 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 286 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void initializeGameTime();
-#line 289 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 295 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 unsigned long getElapsedTime();
-#line 294 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
-unsigned long getRemainingTime();
 #line 300 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+unsigned long getRemainingTime();
+#line 306 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 unsigned long calculateElapsedTime();
-#line 323 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 329 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void checkGameEnd();
-#line 390 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 396 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void resetGame();
-#line 402 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 408 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void startGame();
-#line 455 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 461 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void stopGame();
-#line 468 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 475 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void processCommand(String input);
-#line 528 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 535 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void handleGetCommand(String params);
-#line 561 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 568 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void handleSetCommand(String params);
-#line 638 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 645 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void handleNxtCommand(String params);
-#line 652 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 659 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void handleHelpCommand(String params);
-#line 685 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 692 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void handleSetMode(String value);
-#line 700 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 707 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void handleSetTime(String value);
-#line 711 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 718 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void handleSetGoals(String value);
-#line 719 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 726 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void handleSetScore(int teamIndex, String value);
-#line 760 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 767 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void handleSetName(int teamIndex, String value);
-#line 769 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 776 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void handleSetFlag(int flagIndex, String value);
-#line 819 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 826 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void sendCommandToNextion(const String &command);
-#line 834 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 841 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 String readNextionResponse();
-#line 890 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 897 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void updateNextion();
-#line 981 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 988 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void setup();
-#line 1001 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 1008 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 void loop();
-#line 149 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
+#line 155 "C:\\Projects\\Arduino\\SmartKick\\SmartKick.ino"
 bool debounce(volatile unsigned long &lastmillis)
 { // Entprellfunktion für Interrupts
   if (millis() - lastmillis > interruptData[2])
@@ -519,11 +525,12 @@ void stopGame()
   DEBUG_1_PRINTLN_F("Spiel gestoppt"); // Status melden
 }
 
-// Arrays für Befehlsverarbeitung
+#pragma region                                                                                                                              // Arrays für Befehlsverarbeitung
 const char *COMMAND_TYPES[] = {"get", "set", "nxt", "help"};                                                                                // Befehlstypen
 const char *GET_COMMANDS[] = {"score", "config"};                                                                                           // GET-Befehle
 const char *SET_COMMANDS[] = {"mode", "time", "goals", "start", "stop", "reset", "score1", "score2", "name1", "name2", "debug", "nextion"}; // SET-Befehle
 const char *MODE_VALUES[] = {"free", "time", "classic"};                                                                                    // Spielmodi-Namen
+#pragma endregion
 
 void processCommand(String input)
 {               // Befehl verarbeiten

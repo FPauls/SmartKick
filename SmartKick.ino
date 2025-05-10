@@ -1,11 +1,14 @@
+#pragma region             // Includes
 #include <Arduino.h>       // Arduino-Basisbibliothek
 #include <AltSoftSerial.h> // Serielle Kommunikation für Nextion
+#pragma endregion
 
-// Debug- und Nextion-Einstellungen
+#pragma region              // Debug- und Nextion-Einstellungen
 byte debugLevel = 1;        // 0=keine, 1=wichtig, 2=ausführlich
 bool nextionEnabled = true; // true=aktiviert, false=deaktiviert
+#pragma endregion
 
-// Debug-Makros für verschiedene Ausgabelevels
+#pragma region                           // Debug-Makros für verschiedene Ausgabelevels
 #define DEBUG_0_PRINT(x) Serial.print(x) // Ausgabe immer (Level 0)
 #define DEBUG_0_PRINTLN(x) Serial.println(x)
 #define DEBUG_0_PRINT_F(x) Serial.print(F(x)) // Mit Flash-Speicher-Optimierung
@@ -36,6 +39,7 @@ bool nextionEnabled = true; // true=aktiviert, false=deaktiviert
 #define DEBUG_2_PRINTLN_F(x) \
   if (debugLevel >= 2)       \
   Serial.println(F(x))
+#pragma endregion
 
 byte pinArrayInput[2]{
     // Array für Eingangs-Pins
@@ -143,8 +147,10 @@ public:
   }
 };
 
+#pragma region                                                                             // Call Objects
 RGBLED rgbLed(pinArrayOutput[0], pinArrayOutput[1], pinArrayOutput[2], pinArrayOutput[3]); // RGB-LED-Objekt erstellen
 AltSoftSerial nextionSerial;                                                               // Nextion-Serielle-Verbindung
+#pragma endregion
 
 bool debounce(volatile unsigned long &lastmillis)
 { // Entprellfunktion für Interrupts
@@ -459,11 +465,12 @@ void stopGame()
   DEBUG_1_PRINTLN_F("Spiel gestoppt"); // Status melden
 }
 
-// Arrays für Befehlsverarbeitung
+#pragma region                                                                                                                              // Arrays für Befehlsverarbeitung
 const char *COMMAND_TYPES[] = {"get", "set", "nxt", "help"};                                                                                // Befehlstypen
 const char *GET_COMMANDS[] = {"score", "config"};                                                                                           // GET-Befehle
 const char *SET_COMMANDS[] = {"mode", "time", "goals", "start", "stop", "reset", "score1", "score2", "name1", "name2", "debug", "nextion"}; // SET-Befehle
 const char *MODE_VALUES[] = {"free", "time", "classic"};                                                                                    // Spielmodi-Namen
+#pragma endregion
 
 void processCommand(String input)
 {               // Befehl verarbeiten
