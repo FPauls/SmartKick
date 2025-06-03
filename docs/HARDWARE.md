@@ -162,7 +162,7 @@ Bett-Haftung:   Brim empfohlen
 
 *Hier kann später ein Fritzing-Diagramm oder gezeichneter Schaltplan eingefügt werden*
 
-![Schaltplan Platzhalter](../images/schaltplan.png)
+![Schaltplan](../images/hardware/schaltplan.png)
 *Vollständiger Schaltplan des SmartKick Systems*
 
 ## ⚡ Inbetriebnahme
