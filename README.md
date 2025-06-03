@@ -9,7 +9,7 @@
 
 Verwandle deinen Tischkicker in eine moderne Spielarena! SmartKick erfasst automatisch Tore mit Lichtschranken und zeigt alles auf einem Touch-Display an.
 
-![SmartKick Gehäuse](./images/gehaeuse-render.png)
+![SmartKick Gehäuse](./images/hardware/gehaeuse-render.png)
 *3D-gedrucktes Gehäuse mit integriertem Nextion Touch-Display*
 
 **Ein Schulprojekt der FSE2A** - Wir sind angehende Elektrotechniker am Hans-Böckler-Berufskolleg und haben einen vorhandenen Tischkicker digital erweitert. Open Source für alle!
