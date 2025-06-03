@@ -74,7 +74,7 @@ set start         # Spiel starten
 - **Serielle Konsole**: Vollständige Kontrolle per Terminal (115200 Baud)
 - **Automatisch**: Tore werden per IR-Lichtschranke erkannt
 
-![Nextion Display](./images/5minutes.png)
+![Nextion Display](./images/5minuten.png)
 *Touch-Display zeigt Spielstand, Zeit und Teamnamen*
 
 ## 🏫 Projekt-Hintergrund
