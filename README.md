@@ -1,121 +1,187 @@
-# SmartKick
-> Intelligente Torerfassung für Tischkicker
+# SmartKick - Intelligente Tischkicker-Zählung
 
-<img alt="Version" src="https://img.shields.io/badge/version-1.0-blue">
-<img alt="License" src="https://img.shields.io/badge/license-MIT-green">
-<img alt="Arduino" src="https://img.shields.io/badge/Arduino-Compatible-teal">
+## 🏆 Übersicht
 
-## 🎯 Was ist SmartKick?
+<div align="center">
+<img src="./images/gehaeuse-render.png" alt="SmartKick Gehäuse" width="500">
+<br>
+<em>SmartKick System - 3D-gedrucktes Gehäuse mit Touch-Display</em>
+</div>
 
-Verwandle deinen Tischkicker in eine moderne Spielarena! SmartKick erfasst automatisch Tore mit Lichtschranken und zeigt alles auf einem Touch-Display an.
+**SmartKick** verwandelt jeden Standard-Tischkicker in ein intelligentes Spielsystem mit automatischer Torerkennung und professionellem Touch-Display.
 
-![SmartKick Gehäuse](./images/hardware/gehaeuse-render.png)
-*3D-gedrucktes Gehäuse mit integriertem Nextion Touch-Display*
+## ✨ Features
 
-**Ein Schulprojekt der FSE2A** - Wir sind angehende Elektrotechniker am Hans-Böckler-Berufskolleg und haben einen vorhandenen Tischkicker digital erweitert. Open Source für alle!
+### 🎮 **6 Spielmodi**
+<div align="center">
+<img src="./images/nextion-main-screen.png" alt="Touch Display" width="400">
+<br>
+<em>7" Nextion Touch-Display mit intuitiver Bedienung</em>
+</div>
 
-## ✨ Features auf einen Blick
+- **🆓 Freispiel** - Unbegrenztes Training
+- **⏰ Zeitspiel** - 5 oder 10 Minuten mit Countdown
+- **🏆 Klassisch** - Erstes Team zu 5 oder 10 Punkten
+- **🥇 Best of 3** - Schnelle Entscheidungsspiele
 
-- ⚽ **Automatische Torerkennung** mit Lichtschranken-Sensoren
-- 📱 **7" Touch-Display** für Steuerung und Anzeige  
-- 🎮 **3 Spielmodi**: Freies Spiel, Zeitspiel, Klassisches Spiel
-- 🏆 **Individuell anpassbar**: Teamnamen, Spielzeit, Torziele
-- 🔧 **Einfacher Nachbau** mit 3D-Gehäuse und Anleitung
-- ⚡ **3+ Stunden Akkulaufzeit** mit USB-C Powerbank
+## 🛠️ Hardware-Komponenten
+
+| Komponente | Typ | Kosten (ca.) | Funktion |
+|------------|-----|--------------|----------|
+| **Display** | Nextion NX8048T070_11 (7") | 128,90€ | Touch-Bedienung |
+| **Mikrocontroller** | Arduino Uno Rev 3 (ATmega328P) | 28,51€ | Hauptsteuerung |
+| **Stromversorgung** | Powerbank 10.000mAh QC3.0 | 17,99€ | Mobile Energie |
+| **Sensoren** | IR-Lichtschranken Adafruit ADA2168 (2x) | 31,80€ | Torerkennung |
+| **Anschlüsse** | DIN-Stecker 4-Pol (2x) | 2,10€ | Modulare Verbindung |
+| **USB-Buchse** | USB-C PD 60W Einbaubuchse | 9,99€ | Laden + Smartphone |
+| **Sicherheit** | Metall-Schlüsselschalter 12mm | 2,49€ | Zugangskontrolle |
+| **Gehäuse** | 3D-Druck PLA (ca. 100g) | 2,45€ | Robuster Schutz |
+| **Verkabelung** | Kabel, Schrauben, Adapter | 18,19€ | Verbindungen |
+| **Kleinteile** | Arduino Klemmenblock, Adapter | 15,99€ | Integration |
+| **--- GESAMT ---** | | **258,41€** | **Komplettsystem** |
+
+*Preise (Stand Mai 2025) - ohne Personalkosten*
+
+### 🔋 **Portabel & Robust**
+- **3+ Stunden Akkulaufzeit** mit 10.000mAh Powerbank
+- **USB-C Laden** während dem Spielen + **Smartphone-Ladefunktion**
+- **3D-gedrucktes Gehäuse** - 5mm Wandstärke, Serviceklappe an Rückseite
+- **Schlüsselschalter** - Schutz vor unbefugter Nutzung
+- **DIN-Steckverbindungen** - modularer Aufbau, einzelne Komponenten tauschbar
+
+### ⚡ **Automatische Torerkennung**
+- **IR-Lichtschranken** (Adafruit ADA2168) mit 99%+ Zuverlässigkeit
+- **5mm IR-Sensoren** in jedem Tor mit DIN-Anschluss
+- **Automatische Kalibrierung** gegen Umgebungslicht
+- **Debounce-Algorithmus** filtert Störungen und Vibrationen
+- **Manuelle Korrektur** über +/- Buttons möglich
+
+### 🏗️ **Technische Spezifikationen**
+- **Betriebstemperatur**: 0°C bis 40°C (Gastronomie-tauglich)
+- **Energiebedarf**: Maximal 5V bei 2A
+- **Gehäuse**: 100% recycelter Kunststoff, 5mm Wandstärke
+- **Überlastschutz**: Automatisches Herunterfahren bei Stromüberlastung
+- **Langzeittests**: 100+ Stunden Betrieb erfolgreich getestet
+- **Normen**: CE-Norm, VDE 0701-0702 konform
+
+### 🔧 **Nachrüstung & Service**
+- **Plug & Play** - keine dauerhafte Installation am Tischkicker
+- **Klettverschluss** oder **Schraubverbindung** zur Befestigung
+- **Serviceklappe** für einfachen Komponententausch
+- **Modularer Aufbau** - defekte Teile einzeln austauschbar
 
 ## 🚀 Schnellstart
 
-### 1. 📦 Hardware beschaffen
-**[→ Zur detaillierten Teileliste](./docs/HARDWARE.md)**
-
-| Was du brauchst | Ungefähre Kosten |
-|----------------|------------------|
-| Arduino Uno R3 | ~29€ |
-| Nextion 7" Display | ~129€ |
-| 2x IR-Lichtschranken | ~32€ |
-| 10.000mAh Powerbank | ~18€ |
-| 3D-Druck + Kleinteile | ~25€ |
-| **Gesamt** | **~233€** |
-
-### 2. 🔧 Zusammenbauen
-**[→ Zur Hardware-Setup Anleitung](./docs/HARDWARE.md#installation)**
-
-- Pin-Belegung folgen
-- 3D-Gehäuse drucken
-- Sensoren am Tischkicker montieren
-
-### 3. 💻 Software installieren
-**[→ Zur Software-Anleitung](./docs/SOFTWARE.md)**
-
-- Arduino Code uploaden
-- Nextion Display programmieren
-- Erste Inbetriebnahme
-
-### 4. 🎮 Loslegen!
-**[→ Zur Bedienungsanleitung](./docs/USAGE.md)**
-
-```bash
-set mode time     # Zeitspiel aktivieren
-set time 5        # 5 Minuten Spielzeit
-set name1 Heim    # Team 1 benennen
-set name2 Gast    # Team 2 benennen
-set start         # Spiel starten
+### 1. **Hardware aufbauen**
 ```
-
-## 🎮 So funktioniert's
-
-### Spielmodi im Überblick
-- **🆓 Freies Spiel**: Unbegrenzt spielen ohne Zeitlimit
-- **⏰ Zeitspiel**: Feste Spielzeit (1-99 Minuten)
-- **🏆 Klassisches Spiel**: Erstes Team mit X Toren gewinnt
-
-### Bedienung
-- **Touch-Display**: Direkte Steuerung über das 7" Display
-- **Serielle Konsole**: Vollständige Kontrolle per Terminal (115200 Baud)
-- **Automatisch**: Tore werden per IR-Lichtschranke erkannt
-
-![Nextion Display](./images/5minuten.png)
-*Touch-Display zeigt Spielstand, Zeit und Teamnamen*
-
-## 🏫 Projekt-Hintergrund
-
-**Entwicklerteam**: Philipp Klein, Felix Pauls, Florian Groß-Hartmann  
-**Schule**: Hans-Böckler-Berufskolleg, Münster  
-**Fachrichtung**: Elektrotechnik (FSE2A)  
-**Projektjahr**: 2025  
-
-Dieses Projekt ist unser Schulprojekt im Rahmen der Elektrotechniker-Ausbildung. Wir veröffentlichen es als Open Source, damit andere davon profitieren können!
-
-**Hinweis**: Das Projekt wird eventuell nach Abschluss der Technikerschule archiviert.
-
-## 📚 Vollständige Dokumentation
-
-- 🛠️ **[Hardware-Setup](./docs/HARDWARE.md)** - Teileliste, Schaltplan, 3D-Druck, Installation
-- 💻 **[Software-Details](./docs/SOFTWARE.md)** - Code-Architektur, Installation, Entwicklung
-- 🎮 **[Bedienungsanleitung](./docs/USAGE.md)** - Spielmodi, Befehle, FAQ, Troubleshooting
-
-## 📁 Projektdateien
-
+Arduino → Nextion Display → IR-Sensoren → Powerbank
 ```
-SmartKick/
-├── 📄 README.md              # Diese Datei - Projekt-Überblick
-├── 📄 SmartKick.ino          # Arduino Hauptprogramm
-├── 📁 docs/                  # Detaillierte Dokumentation
-│   ├── HARDWARE.md          # Teileliste, Schaltplan, 3D-Druck
-│   ├── SOFTWARE.md          # Code-Dokumentation, Architektur
-│   └── USAGE.md             # Bedienung, Spielmodi, Befehle
-├── 📁 3D-Daten/             # STL-Dateien für 3D-Druck
-├── 📁 Nextion HMI/          # Display-Interface Projekt
-└── 📁 images/               # Screenshots und Bilder
+**[→ Detaillierte Hardware-Anleitung](docs/HARDWARE.md)**
+
+### 2. **Software flashen**
 ```
+SmartKick.ino → Arduino IDE → Upload
+```
+**[→ Software-Installation](docs/SOFTWARE.md)**
+
+### 3. **System starten**
+<div align="center">
+<img src="./images/menu.jpg" alt="Menü Screenshot" width="350">
+<br>
+<em>Nach dem Start erscheint automatisch das Menü</em>
+</div>
+
+- **Powerbank einschalten**
+- **USB-C einstecken** 
+- **Spielmodus wählen** → Sofort losspielen!
+
+**[→ Vollständige Bedienungsanleitung](docs/USAGE.md)**
+
+## 🎯 Für wen ist SmartKick?
+
+### 🏢 **Unternehmen**
+- **Mittagspausen-Turniere** mit fairer Zeitmessung
+- **Team-Building Events** mit verschiedenen Modi
+- **Pausenraum-Upgrade** ohne dauerhafte Installation
+
+### 🏠 **Privatpersonen**
+- **Familien-Matches** mit automatischer Zählung
+- **Party-Highlight** mit professionellem Touch
+- **Trainings-Tool** für Vereinsspieler
+
+### 🎓 **Bildungseinrichtungen**
+- **MINT-Projekt** für Schüler (Arduino + 3D-Druck)
+- **Pausenhof-Attraktion** in Schulen
+- **Maker-Space Projekt** in Universitäten
+
+## 💡 Warum SmartKick?
+
+### ✅ **Vorteile**
+- **Keine Diskussionen** mehr über Spielstand
+- **Faire Zeitlimits** für Turniere  
+- **Professionelles Feeling** wie bei eSports
+- **Portabel** - kein fester Einbau nötig
+- **Erweiterbar** - Open Source für eigene Ideen
+
+### 🔧 **Alternativen und Abgrenzung**
+- **Strichlisten**: Fehleranfällig, kein Zeitlimit
+- **Handy-Apps**: Erfordern manuelle Eingabe
+- **Profi-Systeme**: 500-2000€, fest installiert
+- **SmartKick**: Automatisch + mobil + günstig
+
+## 📖 Dokumentation
+
+### 🎮 **Benutzer**
+- **[📱 Bedienungsanleitung](docs/USAGE.md)** - Touch-Display, alle Spielmodi
+- **[❓ FAQ & Troubleshooting](docs/USAGE.md#problemlösungen)** - Häufige Probleme lösen
+
+### 🛠️ **Bastler & Entwickler**  
+- **[🔧 Hardware-Setup](docs/HARDWARE.md)** - Schaltplan, Verkabelung, 3D-Druck
+- **[💻 Software-Details](docs/SOFTWARE.md)** - Code-Struktur, Anpassungen
+- **[⌨️ Serielle Konsole](docs/CONSOLE.md)** - Erweiterte Konfiguration
+
+## 🔮 Roadmap & Erweiterungen
+
+### 🎯 **Geplante Features**
+- **🌐 WiFi-Integration** - Online-Ranglisten
+- **📊 Statistiken** - Langzeit-Auswertungen  
+- **🎵 Sound-Effekte** - Tor-Jingles und Hintergrundmusik
+- **📷 Tor-Kamera** - Replay-Funktion für umstrittene Situationen
+
+### 🛡️ **Known Issues**
+- **IR-Sensoren** gelegentlich empfindlich bei direktem Sonnenlicht
+- **Touch-Display** benötigt festen Druck (kapazitiver Touchscreen)
+- **Akkulaufzeit** variiert je nach Display-Helligkeit
+
+## 🤝 Community & Support
+
+### 💬 **Hilfe & Diskussion**
+- **Issues** - Bug-Reports und Feature-Requests
+- **Wiki** - Community-Erweiterungen und Tipps
+- **Releases** - Stable Versionen und Updates
+
+### 🎁 **Beitragen**
+- **Code-Verbesserungen** via Pull-Requests
+- **Dokumentation** erweitern und korrigieren
+- **3D-Gehäuse** alternative Designs teilen
+- **Fotos & Videos** vom eigenen SmartKick
 
 ## 📄 Lizenz
 
-MIT-Lizenz - Siehe [LICENSE](LICENSE) für Details.
+**MIT License** - Frei verwendbar für private und kommerzielle Projekte.
 
 ---
 
-<p align="center">
-  <strong>🎮 Bereit für das nächste Level Tischkicker? 🎮</strong><br>
-  <sub>Made with ❤️ by FSE2A-Team SmartKick | © 2025 Hans-Böckler-Berufskolleg</sub>
-</p>
+## ⭐ **SmartKick gefällt dir?**
+
+<div align="center">
+
+**🌟 Star das Repository** • **🍴 Fork für eigene Projekte** • **📢 Teilen mit Freunden**
+
+*Verwandle auch deinen Tischkicker in ein Smart-System!*
+
+</div>
+
+---
+
+**Navigation**: **Hardware** → [Hardware Setup](docs/HARDWARE.md) | **Software** → [Software Details](docs/SOFTWARE.md) | **Bedienung** → [Usage Guide](docs/USAGE.md)

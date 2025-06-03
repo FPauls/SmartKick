@@ -5,8 +5,11 @@
 ### 1. 🆓 Freispiel
 **Für**: Lockeres Spielen, Übung, Tests
 
-![Display Freispiel](../images/freispiel.jpg)
-*Touch-Display im Freispiel Modus*
+<div align="center">
+<img src="../images/freispiel.jpg" alt="Display Freispiel" width="400">
+<br>
+<em>Touch-Display im Freispiel Modus</em>
+</div>
 
 **Eigenschaften:**
 - ⏱️ **Zeit**: Läuft vorwärts (Elapsed Time)
@@ -23,11 +26,17 @@
 ### 2. ⏰ Zeitspiel (5 oder 10 Minuten)
 **Für**: Turnier-Matches, faire Wettkämpfe
 
-![Display 5 Minuten](../images/5minuten.jpg)
-*5-Minuten Zeitspiel mit Countdown-Timer*
+<div align="center">
+<img src="../images/5minuten.jpg" alt="Display 5 Minuten" width="400">
+<br>
+<em>5-Minuten Zeitspiel mit Countdown-Timer</em>
+</div>
 
-![Display 10 Minuten](../images/10minuten.jpg)
-*10-Minuten Zeitspiel mit Countdown-Timer*
+<div align="center">
+<img src="../images/10minuten.jpg" alt="Display 10 Minuten" width="400">
+<br>
+<em>10-Minuten Zeitspiel mit Countdown-Timer</em>
+</div>
 
 **Verfügbare Zeiten:**
 - **"5 Minuten"** - Schnelle Runden
@@ -48,11 +57,17 @@
 ### 3. 🏆 Klassisches Spiel (5 oder 10 Punkte)
 **Für**: Traditionelle Tischkicker-Matches
 
-![Display 5 Punkte](../images/5punkte.jpg)
-*Klassisches Spiel bis 5 Punkte*
+<div align="center">
+<img src="../images/5punkte.jpg" alt="Display 5 Punkte" width="400">
+<br>
+<em>Klassisches Spiel bis 5 Punkte</em>
+</div>
 
-![Display 10 Punkte](../images/10punkte.jpg)
-*Klassisches Spiel bis 10 Punkte*
+<div align="center">
+<img src="../images/10punkte.jpg" alt="Display 10 Punkte" width="400">
+<br>
+<em>Klassisches Spiel bis 10 Punkte</em>
+</div>
 
 **Verfügbare Punktziele:**
 - **"5 Punkte"** - Schnelle Spiele
@@ -73,8 +88,11 @@
 ### 4. 🥇 Best of 3
 **Für**: Entscheidende Matches
 
-![Display Best of 3](../images/bestof3.jpg)
-*Best of 3 Modus (= Spiel bis 2 Punkte)*
+<div align="center">
+<img src="../images/bestof3.jpg" alt="Display Best of 3" width="400">
+<br>
+<em>Best of 3 Modus (= Spiel bis 2 Punkte)</em>
+</div>
 
 **Eigenschaften:**
 - ⏱️ **Zeit**: Läuft vorwärts (unbegrenzt)
@@ -104,8 +122,11 @@
 ## 📱 Touch-Display Bedienung
 
 ### Hauptbildschirm (Während des Spiels)
-![Display Hauptbildschirm](../images/5punkte.jpg)
-*Hauptanzeige während des Spiels - Beispiel: 5 Punkte Modus*
+<div align="center">
+<img src="../images/5punkte.jpg" alt="Display Hauptbildschirm" width="450">
+<br>
+<em>Hauptanzeige während des Spiels - Beispiel: 5 Punkte Modus</em>
+</div>
 
 **Display-Elemente (wie in den Screenshots):**
 - 🏆 **"SmartKick"** - Logo/Titel oben
@@ -124,8 +145,11 @@
 - **"MENÜ"** Button - Zurück zum Menü
 
 ### Menü-Bildschirm
-![Display Menü](../images/menu.jpg)
-*Einstellungsmenü mit 6 vordefinierten Optionen*
+<div align="center">
+<img src="../images/menu.jpg" alt="Display Menü" width="450">
+<br>
+<em>Einstellungsmenü mit 6 vordefinierten Optionen</em>
+</div>
 
 **Verfügbare Optionen (exakt wie im Screenshot):**
 
@@ -143,8 +167,11 @@
 ## 🎯 Praktische Beispiele
 
 ### 🏆 Schnelles 5-Minuten Match
-![5 Min Beispiel](../images/5minuten.jpg)
-*5-Minuten Setup - Countdown läuft bereits*
+<div align="center">
+<img src="../images/5minuten.jpg" alt="5 Min Beispiel" width="350">
+<br>
+<em>5-Minuten Setup - Countdown läuft bereits</em>
+</div>
 
 **Einfachste Bedienung:**
 1. **"MENÜ"** antippen
@@ -153,8 +180,11 @@
 4. Nach 5:00 Minuten automatisches Ende
 
 ### 🎮 Standard 5-Punkte Spiel
-![5 Punkte Beispiel](../images/5punkte.jpg)
-*Klassisches Match - Team Blau führt bereits*
+<div align="center">
+<img src="../images/5punkte.jpg" alt="5 Punkte Beispiel" width="350">
+<br>
+<em>Klassisches Match - Team Blau führt bereits</em>
+</div>
 
 **Klassisches Kicker-Match:**
 1. **"MENÜ"** antippen  
@@ -163,8 +193,11 @@
 4. Spiel läuft bis erstes Team 5 Punkte hat
 
 ### 🏅 10-Punkte Match
-![10 Punkte Beispiel](../images/10punkte.jpg)
-*Längeres klassisches Spiel*
+<div align="center">
+<img src="../images/10punkte.jpg" alt="10 Punkte Beispiel" width="350">
+<br>
+<em>Längeres klassisches Spiel</em>
+</div>
 
 **Für traditionelle Matches:**
 1. **"MENÜ"** antippen
@@ -173,8 +206,11 @@
 4. Spiel bis erstes Team 10 Punkte erreicht
 
 ### 🥇 Best of 3 Finale
-![Best of 3 Beispiel](../images/bestof3.jpg)
-*Entscheidungsspiel - nur 2 Punkte nötig*
+<div align="center">
+<img src="../images/bestof3.jpg" alt="Best of 3 Beispiel" width="350">
+<br>
+<em>Entscheidungsspiel - nur 2 Punkte nötig</em>
+</div>
 
 **Für wichtige Entscheidungen:**
 1. **"MENÜ"** antippen
@@ -183,8 +219,11 @@
 4. Schnelle Entscheidung
 
 ### 🆓 Lockeres Training
-![Freispiel Beispiel](../images/freispiel.jpg)
-*Unbegrenztes Spiel ohne Zeitdruck*
+<div align="center">
+<img src="../images/freispiel.jpg" alt="Freispiel Beispiel" width="350">
+<br>
+<em>Unbegrenztes Spiel ohne Zeitdruck</em>
+</div>
 
 **Für Übung ohne Druck:**
 1. **"MENÜ"** antippen
@@ -195,8 +234,11 @@
 ## 🔧 Spielstand-Korrektur
 
 ### ⚽ Punkt manuell hinzufügen/entfernen
-![Korrektur Buttons](../images/5punkte.jpg)
-*Plus/Minus Buttons sichtbar neben den Punkteständen*
+<div align="center">
+<img src="../images/5punkte.jpg" alt="Korrektur Buttons" width="400">
+<br>
+<em>Plus/Minus Buttons sichtbar neben den Punkteständen</em>
+</div>
 
 **Falls ein Tor nicht erkannt wurde:**
 1. **"+"** Button beim entsprechenden Team antippen
@@ -279,8 +321,11 @@
 ## 🚀 System starten
 
 ### Beim Einschalten
-![System Start](../images/menu.jpg)
-*Nach dem Booten erscheint direkt das Menü*
+<div align="center">
+<img src="../images/menu.jpg" alt="System Start" width="400">
+<br>
+<em>Nach dem Booten erscheint direkt das Menü</em>
+</div>
 
 **Startvorgang:**
 1. **Powerbank einschalten** (Button drücken)
