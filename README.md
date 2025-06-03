@@ -5,120 +5,117 @@
 <img alt="License" src="https://img.shields.io/badge/license-MIT-green">
 <img alt="Arduino" src="https://img.shields.io/badge/Arduino-Compatible-teal">
 
-## 📋 Inhalt
+## 🎯 Was ist SmartKick?
 
-- [📝 Projektbeschreibung](#-projektbeschreibung)
-- [✨ Features](#-features)
-- [🧰 Komponenten](#-komponenten)
-- [🖥️ Konsolenschnittstelle](#️-konsolenschnittstelle)
-  - [Allgemeine Hilfe](#allgemeine-hilfe)
-  - [GET-Befehle](#get-befehle)
-  - [SET-Befehle](#set-befehle)
-  - [NXT-Befehle](#nxt-befehle)
-  - [Beispiele](#beispiele)
-- [🏫 Projektinformationen](#-projektinformationen)
-- [📄 Lizenz](#-lizenz)
+Verwandle deinen Tischkicker in eine moderne Spielarena! SmartKick erfasst automatisch Tore mit Lichtschranken und zeigt alles auf einem Touch-Display an.
 
-## 📝 Projektbeschreibung
-Hey! Wir sind angehende Elektrotechniker und das hier ist unser Schulprojekt. Wir haben uns vorgenommen, einen vorhandenen Tischkicker mit einer digitalen Auswertung zu erweitern. Die Veröffentlichung dieses Projekts ist nur ein Bonus. Wenn jemand anderes es nützlich findet, ist das ein Gewinn für uns alle!
+![SmartKick Gehäuse](./images/gehaeuse-render.png)
+*3D-gedrucktes Gehäuse mit integriertem Nextion Touch-Display*
 
-Wir entwickeln eine digitale Toranzeige als Nachrüstsatz für bestehende Tischkicker. Das System soll erzielte Tore automatisch erfassen, verschiedene Spielmodi unterstützen und das Spielerlebnis durch eine moderne Benutzeroberfläche verbessern.
+**Ein Schulprojekt der FSE2A** - Wir sind angehende Elektrotechniker am Hans-Böckler-Berufskolleg und haben einen vorhandenen Tischkicker digital erweitert. Open Source für alle!
 
-Hierfür integrieren wir ein Touch-Display in ein 3D-gedrucktes Gehäuse. Die Tore werden durch Sensoren erfasst und die Steuerung erfolgt über einen Mikrocontroller.
+## ✨ Features auf einen Blick
 
-## ✨ Features
-Im Vergleich zu klassischen Anzeigen bietet das Touch-Display:
+- ⚽ **Automatische Torerkennung** mit Lichtschranken-Sensoren
+- 📱 **7" Touch-Display** für Steuerung und Anzeige  
+- 🎮 **3 Spielmodi**: Freies Spiel, Zeitspiel, Klassisches Spiel
+- 🏆 **Individuell anpassbar**: Teamnamen, Spielzeit, Torziele
+- 🔧 **Einfacher Nachbau** mit 3D-Gehäuse und Anleitung
+- ⚡ **3+ Stunden Akkulaufzeit** mit USB-C Powerbank
 
-Dynamische Anzeige: Spielmodi, Animationen und visuelle Effekte
-Touch-Bedienung: Direkte Steuerung über das Display
-Erweiterte Funktionen: Darstellung von Teamnamen, Spielständen und Timern
-Durch moderne Sensortechnik und interaktive Visualisierung schaffen wir eine innovative Lösung für Tischkicker-Enthusiasten.
+## 🚀 Schnellstart
 
-## 🧰 Komponenten
-- Arduino Mikrocontroller
-- Nextion Touch-Display
-- Lichtschranken zur Torerkennung
-- RGB-LED für Visualisierung
-- 3D-gedrucktes Gehäuse
+### 1. 📦 Hardware beschaffen
+**[→ Zur detaillierten Teileliste](./docs/HARDWARE.md)**
 
-## 🖥️ Konsolenschnittstelle
-#### Allgemeine Hilfe
-```
-=== SMARTKICK HILFE ===
-help          - Diese Hilfe
-help get      - GET-Befehle anzeigen
-help set      - SET-Befehle anzeigen
-help nxt      - NXT-Befehle anzeigen
-```
+| Was du brauchst | Ungefähre Kosten |
+|----------------|------------------|
+| Arduino Uno R3 | ~29€ |
+| Nextion 7" Display | ~129€ |
+| 2x IR-Lichtschranken | ~32€ |
+| 10.000mAh Powerbank | ~18€ |
+| 3D-Druck + Kleinteile | ~25€ |
+| **Gesamt** | **~233€** |
 
-#### GET-Befehle
-```
-=== GET-BEFEHLE ===
-get score     - Zeigt Spielstand an
-get config    - Zeigt Konfiguration an
-```
+### 2. 🔧 Zusammenbauen
+**[→ Zur Hardware-Setup Anleitung](./docs/HARDWARE.md#installation)**
 
-#### SET-Befehle
-```
-=== SET-BEFEHLE ===
-set mode free|time|classic - Spielmodus setzen
-set time INT               - Spielzeit in Minuten
-set goals INT              - Tore zum Sieg
-set start|stop|reset       - Spielsteuerung
-set score1|score2 INT|+|-  - Spielstand setzen/ändern
-set name1|name2 STRING     - Teamnamen setzen
-set debug 0|1|2            - Debug-Level einstellen
-set nextion on|off         - Nextion-Display aktivieren/deaktivieren
+- Pin-Belegung folgen
+- 3D-Gehäuse drucken
+- Sensoren am Tischkicker montieren
+
+### 3. 💻 Software installieren
+**[→ Zur Software-Anleitung](./docs/SOFTWARE.md)**
+
+- Arduino Code uploaden
+- Nextion Display programmieren
+- Erste Inbetriebnahme
+
+### 4. 🎮 Loslegen!
+**[→ Zur Bedienungsanleitung](./docs/USAGE.md)**
+
+```bash
+set mode time     # Zeitspiel aktivieren
+set time 5        # 5 Minuten Spielzeit
+set name1 Heim    # Team 1 benennen
+set name2 Gast    # Team 2 benennen
+set start         # Spiel starten
 ```
 
-#### NXT-Befehle
+## 🎮 So funktioniert's
+
+### Spielmodi im Überblick
+- **🆓 Freies Spiel**: Unbegrenzt spielen ohne Zeitlimit
+- **⏰ Zeitspiel**: Feste Spielzeit (1-99 Minuten)
+- **🏆 Klassisches Spiel**: Erstes Team mit X Toren gewinnt
+
+### Bedienung
+- **Touch-Display**: Direkte Steuerung über das 7" Display
+- **Serielle Konsole**: Vollständige Kontrolle per Terminal (115200 Baud)
+- **Automatisch**: Tore werden per IR-Lichtschranke erkannt
+
+![Nextion Display](./images/nextion-main-screen.png)
+*Touch-Display zeigt Spielstand, Zeit und Teamnamen*
+
+## 🏫 Projekt-Hintergrund
+
+**Entwicklerteam**: Philipp Klein, Felix Pauls, Florian Groß-Hartmann  
+**Schule**: Hans-Böckler-Berufskolleg, Münster  
+**Fachrichtung**: Elektrotechnik (FSE2A)  
+**Projektjahr**: 2025  
+
+Dieses Projekt ist unser Schulprojekt im Rahmen der Elektrotechniker-Ausbildung. Wir veröffentlichen es als Open Source, damit andere davon profitieren können!
+
+**Hinweis**: Das Projekt wird eventuell nach Abschluss der Technikerschule archiviert.
+
+## 📚 Vollständige Dokumentation
+
+- 🛠️ **[Hardware-Setup](./docs/HARDWARE.md)** - Teileliste, Schaltplan, 3D-Druck, Installation
+- 💻 **[Software-Details](./docs/SOFTWARE.md)** - Code-Architektur, Installation, Entwicklung
+- 🎮 **[Bedienungsanleitung](./docs/USAGE.md)** - Spielmodi, Befehle, FAQ, Troubleshooting
+
+## 📁 Projektdateien
 
 ```
-=== NXT-BEFEHLE ===
-nxt COMMAND   - Sendet Befehl an Nextion-Display
+SmartKick/
+├── 📄 README.md              # Diese Datei - Projekt-Überblick
+├── 📄 SmartKick.ino          # Arduino Hauptprogramm
+├── 📁 docs/                  # Detaillierte Dokumentation
+│   ├── HARDWARE.md          # Teileliste, Schaltplan, 3D-Druck
+│   ├── SOFTWARE.md          # Code-Dokumentation, Architektur
+│   └── USAGE.md             # Bedienung, Spielmodi, Befehle
+├── 📁 3D-Daten/             # STL-Dateien für 3D-Druck
+├── 📁 Nextion HMI/          # Display-Interface Projekt
+└── 📁 images/               # Screenshots und Bilder
 ```
-
-### Beispiele
-#### Spielmodi einstellen
-```
-set mode free     # Freies Spiel ohne Zeitlimit/Siegbedingung
-set mode time     # Zeitspiel mit festgelegter Spielzeit
-set mode classic  # Klassisches Spiel mit definierter Torzahl zum Sieg
-```
-#### Spielkonfiguration
-```
-set time 10       # Spielzeit auf 10 Minuten setzen
-set goals 5       # 5 Tore zum Sieg erforderlich
-set name1 Blau    # Team 1 auf "Blau" umbenennen
-set name2 Gelb    # Team 2 auf "Gelb" umbenennen
-```
-#### Spielsteuerung
-```
-set start         # Spiel starten (setzt Spielstand zurück)
-set stop          # Spiel anhalten
-set reset         # Spielstand zurücksetzen
-```
-#### Spielstand-Verwaltung
-```
-set score1 3      # Spielstand Team 1 auf 3 setzen
-set score2 0      # Spielstand Team 2 auf 0 setzen
-set score1 +      # Spielstand Team 1 erhöhen
-set score2 -      # Spielstand Team 2 verringern
-```
-#### System-Einstellungen
-```
-set debug 0       # Keine Debug-Ausgaben
-set debug 1       # Wichtige Debug-Meldungen
-set debug 2       # Ausführliche Debug-Meldungen
-set nextion on    # Nextion-Display aktivieren
-set nextion off   # Nextion-Display deaktivieren
-```
-## 🏫 Projektinformationen
-Dieses Projekt wurde mit Unterstützung und im Auftrag des Hans-Böckler-Berufskollegs erarbeitet.
-
-Bitte beachte, dass wir das Projekt eventuell nach Abschluss der Technikerschule wieder offline nehmen können und keine Garantien stellen können.
 
 ## 📄 Lizenz
-Dieses Projekt ist unter der MIT-Lizenz lizenziert. Siehe die LICENSE-Datei für weitere Details.
 
-<p align="center"> <sub>Made with ❤️ by FSE2A-Team SmartKick | © 2025</sub> </p>
+MIT-Lizenz - Siehe [LICENSE](LICENSE) für Details.
+
+---
+
+<p align="center">
+  <strong>🎮 Bereit für das nächste Level Tischkicker? 🎮</strong><br>
+  <sub>Made with ❤️ by FSE2A-Team SmartKick | © 2025 Hans-Böckler-Berufskolleg</sub>
+</p>

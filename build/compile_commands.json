@@ -85,71 +85,11 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial3.cpp",
-   "-o",
-   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\HardwareSerial3.cpp.o"
-  ],
-  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial3.cpp"
- },
- {
-  "directory": "c:\\Projects\\Arduino\\SmartKick",
-  "arguments": [
-   "C:\\Arduino\\data\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
-   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\CDC.cpp",
    "-o",
    "C:\\Projects\\Arduino\\SmartKick\\build\\core\\CDC.cpp.o"
   ],
   "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\CDC.cpp"
- },
- {
-  "directory": "c:\\Projects\\Arduino\\SmartKick",
-  "arguments": [
-   "C:\\Arduino\\data\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
-   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Stream.cpp",
-   "-o",
-   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\Stream.cpp.o"
-  ],
-  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Stream.cpp"
  },
  {
   "directory": "c:\\Projects\\Arduino\\SmartKick",
@@ -205,101 +145,11 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Print.cpp",
+   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial.cpp",
    "-o",
-   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\Print.cpp.o"
+   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\HardwareSerial.cpp.o"
   ],
-  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Print.cpp"
- },
- {
-  "directory": "c:\\Projects\\Arduino\\SmartKick",
-  "arguments": [
-   "C:\\Arduino\\data\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
-   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\IPAddress.cpp",
-   "-o",
-   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\IPAddress.cpp.o"
-  ],
-  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\IPAddress.cpp"
- },
- {
-  "directory": "c:\\Projects\\Arduino\\SmartKick",
-  "arguments": [
-   "C:\\Arduino\\data\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
-   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Tone.cpp",
-   "-o",
-   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\Tone.cpp.o"
-  ],
-  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Tone.cpp"
- },
- {
-  "directory": "c:\\Projects\\Arduino\\SmartKick",
-  "arguments": [
-   "C:\\Arduino\\data\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
-   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\PluggableUSB.cpp",
-   "-o",
-   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\PluggableUSB.cpp.o"
-  ],
-  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\PluggableUSB.cpp"
+  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial.cpp"
  },
  {
   "directory": "c:\\Projects\\Arduino\\SmartKick",
@@ -355,11 +205,41 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial.cpp",
+   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Stream.cpp",
    "-o",
-   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\HardwareSerial.cpp.o"
+   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\Stream.cpp.o"
   ],
-  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial.cpp"
+  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Stream.cpp"
+ },
+ {
+  "directory": "c:\\Projects\\Arduino\\SmartKick",
+  "arguments": [
+   "C:\\Arduino\\data\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
+   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\PluggableUSB.cpp",
+   "-o",
+   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\PluggableUSB.cpp.o"
+  ],
+  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\PluggableUSB.cpp"
  },
  {
   "directory": "c:\\Projects\\Arduino\\SmartKick",
@@ -415,6 +295,96 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
+   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Tone.cpp",
+   "-o",
+   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\Tone.cpp.o"
+  ],
+  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Tone.cpp"
+ },
+ {
+  "directory": "c:\\Projects\\Arduino\\SmartKick",
+  "arguments": [
+   "C:\\Arduino\\data\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
+   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial3.cpp",
+   "-o",
+   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\HardwareSerial3.cpp.o"
+  ],
+  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial3.cpp"
+ },
+ {
+  "directory": "c:\\Projects\\Arduino\\SmartKick",
+  "arguments": [
+   "C:\\Arduino\\data\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
+   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\IPAddress.cpp",
+   "-o",
+   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\IPAddress.cpp.o"
+  ],
+  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\IPAddress.cpp"
+ },
+ {
+  "directory": "c:\\Projects\\Arduino\\SmartKick",
+  "arguments": [
+   "C:\\Arduino\\data\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial2.cpp",
    "-o",
    "C:\\Projects\\Arduino\\SmartKick\\build\\core\\HardwareSerial2.cpp.o"
@@ -445,11 +415,11 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\WMath.cpp",
+   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Print.cpp",
    "-o",
-   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\WMath.cpp.o"
+   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\Print.cpp.o"
   ],
-  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\WMath.cpp"
+  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Print.cpp"
  },
  {
   "directory": "c:\\Projects\\Arduino\\SmartKick",
@@ -502,11 +472,11 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\abi.cpp",
+   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\WMath.cpp",
    "-o",
-   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\abi.cpp.o"
+   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\WMath.cpp.o"
   ],
-  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\abi.cpp"
+  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\WMath.cpp"
  },
  {
   "directory": "c:\\Projects\\Arduino\\SmartKick",
@@ -562,11 +532,11 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\new.cpp",
+   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\main.cpp",
    "-o",
-   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\new.cpp.o"
+   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\main.cpp.o"
   ],
-  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\new.cpp"
+  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\main.cpp"
  },
  {
   "directory": "c:\\Projects\\Arduino\\SmartKick",
@@ -598,13 +568,20 @@
  {
   "directory": "c:\\Projects\\Arduino\\SmartKick",
   "arguments": [
-   "C:\\Arduino\\data\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-gcc",
+   "C:\\Arduino\\data\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
    "-c",
    "-g",
-   "-x",
-   "assembler-with-cpp",
-   "-flto",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
    "-MMD",
+   "-flto",
    "-mmcu=atmega328p",
    "-DF_CPU=16000000L",
    "-DARDUINO=10607",
@@ -612,11 +589,38 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_pulse.S",
+   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\new.cpp",
    "-o",
-   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\wiring_pulse.S.o"
+   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\new.cpp.o"
   ],
-  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_pulse.S"
+  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\new.cpp"
+ },
+ {
+  "directory": "c:\\Projects\\Arduino\\SmartKick",
+  "arguments": [
+   "C:\\Arduino\\data\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-gcc",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu11",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-MMD",
+   "-flto",
+   "-fno-fat-lto-objects",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
+   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring.c",
+   "-o",
+   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\wiring.c.o"
+  ],
+  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring.c"
  },
  {
   "directory": "c:\\Projects\\Arduino\\SmartKick",
@@ -666,11 +670,34 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_pulse.c",
+   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_digital.c",
    "-o",
-   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\wiring_pulse.c.o"
+   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\wiring_digital.c.o"
   ],
-  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_pulse.c"
+  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_digital.c"
+ },
+ {
+  "directory": "c:\\Projects\\Arduino\\SmartKick",
+  "arguments": [
+   "C:\\Arduino\\data\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-gcc",
+   "-c",
+   "-g",
+   "-x",
+   "assembler-with-cpp",
+   "-flto",
+   "-MMD",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
+   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_pulse.S",
+   "-o",
+   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\wiring_pulse.S.o"
+  ],
+  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_pulse.S"
  },
  {
   "directory": "c:\\Projects\\Arduino\\SmartKick",
@@ -693,11 +720,11 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring.c",
+   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_pulse.c",
    "-o",
-   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\wiring.c.o"
+   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\wiring_pulse.c.o"
   ],
-  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring.c"
+  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_pulse.c"
  },
  {
   "directory": "c:\\Projects\\Arduino\\SmartKick",
@@ -723,11 +750,11 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\main.cpp",
+   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\abi.cpp",
    "-o",
-   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\main.cpp.o"
+   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\abi.cpp.o"
   ],
-  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\main.cpp"
+  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\abi.cpp"
  },
  {
   "directory": "c:\\Projects\\Arduino\\SmartKick",
@@ -755,32 +782,5 @@
    "C:\\Projects\\Arduino\\SmartKick\\build\\core\\wiring_shift.c.o"
   ],
   "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_shift.c"
- },
- {
-  "directory": "c:\\Projects\\Arduino\\SmartKick",
-  "arguments": [
-   "C:\\Arduino\\data\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-gcc",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu11",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-MMD",
-   "-flto",
-   "-fno-fat-lto-objects",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
-   "-IC:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_digital.c",
-   "-o",
-   "C:\\Projects\\Arduino\\SmartKick\\build\\core\\wiring_digital.c.o"
-  ],
-  "file": "C:\\Arduino\\data\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_digital.c"
  }
 ]
