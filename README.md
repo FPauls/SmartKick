@@ -135,32 +135,6 @@ SmartKick.ino → Arduino IDE → Upload
 - **[💻 Software-Details](docs/SOFTWARE.md)** - Code-Struktur, Anpassungen
 - **[⌨️ Serielle Konsole](docs/CONSOLE.md)** - Erweiterte Konfiguration
 
-## 🔮 Roadmap & Erweiterungen
-
-### 🎯 **Geplante Features**
-- **🌐 WiFi-Integration** - Online-Ranglisten
-- **📊 Statistiken** - Langzeit-Auswertungen  
-- **🎵 Sound-Effekte** - Tor-Jingles und Hintergrundmusik
-- **📷 Tor-Kamera** - Replay-Funktion für umstrittene Situationen
-
-### 🛡️ **Known Issues**
-- **IR-Sensoren** gelegentlich empfindlich bei direktem Sonnenlicht
-- **Touch-Display** benötigt festen Druck (kapazitiver Touchscreen)
-- **Akkulaufzeit** variiert je nach Display-Helligkeit
-
-## 🤝 Community & Support
-
-### 💬 **Hilfe & Diskussion**
-- **Issues** - Bug-Reports und Feature-Requests
-- **Wiki** - Community-Erweiterungen und Tipps
-- **Releases** - Stable Versionen und Updates
-
-### 🎁 **Beitragen**
-- **Code-Verbesserungen** via Pull-Requests
-- **Dokumentation** erweitern und korrigieren
-- **3D-Gehäuse** alternative Designs teilen
-- **Fotos & Videos** vom eigenen SmartKick
-
 ## 📄 Lizenz
 
 **MIT License** - Frei verwendbar für private und kommerzielle Projekte.
