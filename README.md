@@ -3,7 +3,7 @@
 ## 🏆 Übersicht
 
 <div align="center">
-<img src="./images/gehaeuse-render.png" alt="SmartKick Gehäuse" width="500">
+<img src="./images/hardware/gehaeuse-render.png" alt="SmartKick Gehäuse" width="500">
 <br>
 <em>SmartKick System - 3D-gedrucktes Gehäuse mit Touch-Display</em>
 </div>
@@ -14,7 +14,7 @@
 
 ### 🎮 **6 Spielmodi**
 <div align="center">
-<img src="./images/nextion-main-screen.png" alt="Touch Display" width="400">
+<img src="./images/menu.jpg" alt="Touch Display" width="400">
 <br>
 <em>7" Nextion Touch-Display mit intuitiver Bedienung</em>
 </div>
@@ -26,21 +26,16 @@
 
 ## 🛠️ Hardware-Komponenten
 
-| Komponente | Typ | Kosten (ca.) | Funktion |
-|------------|-----|--------------|----------|
-| **Display** | Nextion NX8048T070_11 (7") | 128,90€ | Touch-Bedienung |
-| **Mikrocontroller** | Arduino Uno Rev 3 (ATmega328P) | 28,51€ | Hauptsteuerung |
-| **Stromversorgung** | Powerbank 10.000mAh QC3.0 | 17,99€ | Mobile Energie |
-| **Sensoren** | IR-Lichtschranken Adafruit ADA2168 (2x) | 31,80€ | Torerkennung |
-| **Anschlüsse** | DIN-Stecker 4-Pol (2x) | 2,10€ | Modulare Verbindung |
-| **USB-Buchse** | USB-C PD 60W Einbaubuchse | 9,99€ | Laden + Smartphone |
-| **Sicherheit** | Metall-Schlüsselschalter 12mm | 2,49€ | Zugangskontrolle |
-| **Gehäuse** | 3D-Druck PLA (ca. 100g) | 2,45€ | Robuster Schutz |
-| **Verkabelung** | Kabel, Schrauben, Adapter | 18,19€ | Verbindungen |
-| **Kleinteile** | Arduino Klemmenblock, Adapter | 15,99€ | Integration |
-| **--- GESAMT ---** | | **258,41€** | **Komplettsystem** |
+**Professionelle Komponenten für zuverlässigen Betrieb:**
+- **7" Nextion Touch-Display** - Intuitive Bedienung
+- **Arduino Uno Rev 3** - Zuverlässige Steuerung  
+- **IR-Lichtschranken** - 99%+ Torerkennungsrate
+- **10.000mAh Powerbank** - 3+ Stunden Spielzeit
+- **3D-Gehäuse** - Robust und servicefreundlich
 
-*Preise (Stand Mai 2025) - ohne Personalkosten*
+**Gesamtkosten: ~260€** (ohne Personalkosten)
+
+**[→ Detaillierte Teileliste & Verkabelung](docs/HARDWARE.md)**
 
 ### 🔋 **Portabel & Robust**
 - **3+ Stunden Akkulaufzeit** mit 10.000mAh Powerbank
