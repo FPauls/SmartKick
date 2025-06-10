@@ -44,15 +44,15 @@ Die Bauteilwahl folgte **industriellen Standards** bei **optimierten Kosten** f�
 
 **Arduino Uno Pin-Belegung:**
 ```
-DIGITALE PINS:
-Pin 0 (RX)  → Nextion Display TX
-Pin 1 (TX)  → Nextion Display RX  
+DIGITALE PINS:  
 Pin 2 (INT) → IR-Sensor Tor 1 (Interrupt-fähig)
 Pin 3 (INT) → IR-Sensor Tor 2 (Interrupt-fähig)
 Pin 4 (PWM) → RGB-LED Rot  (optional)
 Pin 5 (PWM) → RGB-LED Grün (optional)  
 Pin 6 (PWM) → RGB-LED Blau (optional)
 Pin 7       → RGB-LED GND  (optional)
+Pin 8 (RX)  → Nextion Display TX
+Pin 9 (TX)  → Nextion Display RX
 
 STROMVERSORGUNG:
 5V  → Nextion Display, IR-Sensoren
@@ -61,7 +61,7 @@ VIN → Powerbank 5V Eingang
 ```
 
 **Hardware-Kommunikation:**
-- **UART-Verbindung** (Pin 0/1) für Display-Ansteuerung
+- **UART-Verbindung** (Pin 8/9) für Display-Ansteuerung (AltSoftSerial)
 - **Hardware-Interrupts** (Pin 2/3) für Echtzeit-Torerkennung
 - **PWM-Ausgänge** (Pin 4-6) für RGB-LED Farbmischung
 - **Spannungsverteilung** über Arduino 5V Rail
